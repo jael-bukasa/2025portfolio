@@ -1,0 +1,77 @@
+
+:root{
+   --violet-doux: #6C63FF;
+   --violet-foncé:#534EDD;
+   --orange-vif:#FFA726;
+   --gris-très-foncé:#333;
+   --gris-foncé:#666;
+   --gris-très-claire:#F8F8F8;
+   --gris-claire:#EEE;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color:var(--gris-très-claire) ;
+    font-family: roboto ,sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem 3rem;
+    
+}
+.logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--violet-doux);
+    font-weight: bold;
+   
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+ul li{
+    margin-left: 25px;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--gris-très-foncé);
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    padding: 10px 0;
+}
+ul li a:hover{
+    color: var(--violet-foncé);
+}
+ul li a::after{
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 0;
+     height: 2px;
+     background-color: var(--violet-doux);
+     transition: width 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+ul li a.active{
+    color: var(--violet-doux);
+
+}
+ul li a.active::after{
+    width: 100%;
+}
