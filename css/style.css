@@ -124,13 +124,14 @@ ul li a.active::after{
     width: 800px;
     margin: 2rem auto;
 }
-.about-section h2{
+section h2{
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--violet-doux);
     position: relative;
+    text-align: center;
 }
-.about-section h2::after{  /* soulignement*/
+section h2::after{  /* soulignement*/
     content: '';
     display: block;
     height: 4px;
@@ -144,4 +145,61 @@ ul li a.active::after{
     font-size: 1.1em;
     color: var(--gris-foncé);
     margin-bottom: 2rem;
+}
+.competence-section{
+   margin-top: 3rem;
+}
+.competence-section table{
+    width: 80%;
+    margin: 0 auto;
+    background-color:#FFF;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.08);
+    margin-bottom:3rem ;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.competence-section table th, .competence-section table td{
+      padding: 15px;
+}
+.competence-section table thead tr{
+    background-color: var(--violet-doux);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+}
+.competence-section table td{
+    border-bottom: px solid var(--gris-claire);
+}
+.competence-section table tbody tr:nth-child(even){
+background-color: #fdfdfd;
+}
+.competence-section table tbody tr{
+    transition: background-color 0.3s ease, transform 0.2S ease;
+}
+.competence-section table tbody tr:hover{
+    background-color: #F0F0F0;
+    transform: translateY(-3px);
+}
+footer{
+    background-color: var(--violet-foncé);
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+footer p{
+    margin-bottom: 1rem;
+}
+footer a{
+    font-size: 1.6em;
+    display: inline-block;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2S ease;
+    }
+footer a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
 }
