@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>Mes contact</h1>
-    <a href="index.html">Accueil</a>
-    <a href="projet.html">projets</a>
-    <a href="passion.html">passions</a>
-    <a href="divertissement.html">divertissement</a>
-    <a href="contact.html">contact</a>
+<body class="body-contact">
+    <header>
+        <div  >
+           <a href="index.html" class="logo">Mon Portfolio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="projet.html" >projets</a></li>
+                <li><a href="passion.html">passions</a></li>
+                <li><a href="divertissement.html">divertissement</a></li>
+                <li><a href="contact.html" class="active-contact">contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="main-contanct">
+    <div class="container">
+     <h1>CONTACTEZ NOUS</h1>
+     <form class="contact-form">
+     <div class="input-group">
+        <input type="text" placeholder="FULL NAME" required>
+        <input type="email" placeholder="EMAIL ADDRESS" required>
+      </div>
+     <textarea placeholder="MESSAGE" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+    </main>
+    <footer>
+        <p>&copy;2025 Jael.tous droits réservé.</p>
+
+        <div class="social-icons">
+        <a href="URL_DE_VOTRE_PROFIL_LINKEDIN" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin social-icon linkedin"></i>
+        </a>
+
+        <a href="URL_DE_VOTRE_PROFIL_GITHUB" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github social-icon github"></i>
+        </a>
+
+        <a href="URL_DE_VOTRE_PROFIL_TWITTER" target="_blank" aria-label="Twitter (X)">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+    </div>
+    </footer>
 </body>
 </html>
