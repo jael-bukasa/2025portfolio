@@ -261,9 +261,3 @@ button {
 button:hover {
   transform: scale(1.05);
 }
-ul li a.active-contact{
-    color: var(--violet-doux);
-}
-ul li a.active-contact::after{
-    width: 100%;
-}
